@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mafia_Game_Controller.DayGamePart">
+  <StackLayout Spacing="3" BackgroundColor="Black">
+<Label Text="ДЕНЬ" FontSize="20" BackgroundColor="Black" TextColor="Red" HorizontalTextAlignment="Center" />
+
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="25" />
+        <ColumnDefinition Width="250" />
+        <ColumnDefinition Width="150" />
+      </Grid.ColumnDefinitions>
+      <Label x:Name="label0" Text="№"  FontSize="14"  Grid.Row="0" Grid.Column="0"/>
+      <Label x:Name="label1" Text="1"  FontSize="14" Grid.Row="1" Grid.Column="0"/>
+      <Label x:Name="label2" Text="2"  FontSize="14" Grid.Row="2" Grid.Column="0"/>
+      <Label x:Name="label3" Text="3"  FontSize="14" Grid.Row="3" Grid.Column="0"/>
+      <Label x:Name="label4" Text="4"  FontSize="14" Grid.Row="4" Grid.Column="0"/>
+      <Label x:Name="label5" Text="5"  FontSize="14" Grid.Row="5" Grid.Column="0"/>
+      <Label x:Name="label6" Text="6"  FontSize="14" Grid.Row="6" Grid.Column="0"/>
+      <Label x:Name="label7" Text="7"  FontSize="14" Grid.Row="7" Grid.Column="0"/>
+      <Label x:Name="label8" Text="8"  FontSize="14" Grid.Row="8" Grid.Column="0"/>
+      <Label x:Name="label9" Text="9"  FontSize="14" Grid.Row="9" Grid.Column="0"/>
+      <Label x:Name="label10" Text="10" FontSize="14" Grid.Row="10" Grid.Column="0"/>
+
+      <Label Text="Нік-нейм гравця" Grid.Row="0" Grid.Column="1" FontSize="14"/>
+      <Entry  x:Name="entry1" Grid.Row="1" Grid.Column="1" />
+      <Entry  x:Name="entry2" Grid.Row="2" Grid.Column="1"/>
+      <Entry  x:Name="entry3" Grid.Row="3" Grid.Column="1"/>
+      <Entry  x:Name="entry4" Grid.Row="4" Grid.Column="1"/>
+      <Entry  x:Name="entry5" Grid.Row="5" Grid.Column="1"/>
+      <Entry  x:Name="entry6" Grid.Row="6" Grid.Column="1"/>
+      <Entry  x:Name="entry7" Grid.Row="7" Grid.Column="1"/>
+      <Entry  x:Name="entry8" Grid.Row="8" Grid.Column="1"/>
+      <Entry  x:Name="entry9" Grid.Row="9" Grid.Column="1"/>
+      <Entry  x:Name="entry10" Grid.Row="10" Grid.Column="1"/>
+
+
+
+      <Label Text="Зауваження" Grid.Row="0" Grid.Column="2" FontSize="14"/>
+      <Button x:Name="button1" Clicked="Buttons_Click" FontSize="14"  Grid.Row="1" Grid.Column="2" />
+      <Button x:Name="button2" Clicked="Buttons_Click" FontSize="14"    Grid.Row="2" Grid.Column="2"/>
+      <Button x:Name="button3" Clicked="Buttons_Click" FontSize="14"  Grid.Row="3" Grid.Column="2"/>
+      <Button x:Name="button4" Clicked="Buttons_Click" FontSize="14"    Grid.Row="4" Grid.Column="2"/>
+      <Button x:Name="button5" Clicked="Buttons_Click" FontSize="14"    Grid.Row="5" Grid.Column="2"/>
+      <Button x:Name="button6" Clicked="Buttons_Click" FontSize="14"   Grid.Row="6" Grid.Column="2"/>
+      <Button x:Name="button7" Clicked="Buttons_Click" FontSize="14"   Grid.Row="7" Grid.Column="2"/>
+      <Button x:Name="button8" Clicked="Buttons_Click" FontSize="14"    Grid.Row="8" Grid.Column="2"/>
+      <Button x:Name="button9" Clicked="Buttons_Click" FontSize="14"  Grid.Row="9" Grid.Column="2"/>
+      <Button x:Name="button10" Clicked="Buttons_Click" FontSize="14"    Grid.Row="10" Grid.Column="2"/>
+
+    
+    </Grid>
+
+
+    <Button Text="Ніч" Clicked="GoToNight"/>
+    
+ 
+
+
+  </StackLayout>
+</ContentPage>

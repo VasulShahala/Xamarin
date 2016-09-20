@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mafia_Game_Controller.MainPage">
+ 
+<StackLayout Spacing="50" BackgroundColor="Black">
+
+  
+   <Label   
+           Text="МАФІЯ" TextColor="Red" 
+           BackgroundColor="Black"
+           FontSize="25"  
+           HorizontalTextAlignment="Center" 
+           VerticalTextAlignment="Center" 
+           IsVisible="True" 
+           HeightRequest="30" 
+           WidthRequest="250"  />
+
+<Entry 
+           
+           ClassId="NickLead"
+           IsEnabled="True"
+           HorizontalTextAlignment="Center" 
+           Keyboard="Text" 
+            />
+   <DatePicker ClassId="DateGame"
+             
+     />
+  <Grid>
+  <Grid.RowDefinitions>
+    <RowDefinition Height="*" />
+    <RowDefinition Height="*" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+  <Label Text="Мирний" Grid.Row="0" Grid.Column="0" BackgroundColor="Red" TextColor="Black" VerticalTextAlignment="Start" HorizontalTextAlignment="End"  FontSize="18" HeightRequest="100"/>
+  <Label Text="Дон" Grid.Row="0" Grid.Column="1" BackgroundColor="Red" TextColor="Black" VerticalTextAlignment="Start" HorizontalTextAlignment="End"  FontSize="18" HeightRequest="100"/>
+    <Label Text="Шериф" Grid.Row="0" Grid.Column="2" BackgroundColor="Red" TextColor="Black" VerticalTextAlignment="Start" HorizontalTextAlignment="End"  FontSize="18" HeightRequest="100"/>
+  <Label Text="Мафія" Grid.Row="0" Grid.Column="3" BackgroundColor="Red" TextColor="Black" VerticalTextAlignment="Start" HorizontalTextAlignment="End"  FontSize="18" HeightRequest="100"/>
+
+</Grid>
+   
+ 
+   <Button Text="Розпочати"
+           Clicked="GoToRoleChoose"
+           
+     />
+ 
+  
+</StackLayout>
+
+
+</ContentPage>

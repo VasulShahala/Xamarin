@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mafia_Game_Controller.NightPartGame">
+
+<StackLayout Spacing="3" BackgroundColor="Black" > 
+  <Label Text="НІЧ" FontSize="20" HorizontalOptions="Center" TextColor="Red"/>
+  
+  <Switch IsToggled="true" VerticalOptions="CenterAndExpand"
+          HorizontalOptions="Center" Toggled= "switcher_Toggled" />
+<Label x:Name="DonPlayLabel" Text="Гра дона" IsVisible="True" FontSize="24" TextColor="Red"/>
+  
+<Label x:Name="SheriffPlayLabel" Text="Гра шерифа" IsVisible="false"  FontSize="24" TextColor="Red"/>
+  <Grid HorizontalOptions="Center" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="75" />
+      <RowDefinition Height="75" />
+      <RowDefinition Height="75" />
+     <RowDefinition Height="75" />
+      <RowDefinition Height="75" />
+      <RowDefinition Height="75" />
+     <RowDefinition Height="75" />
+      <RowDefinition Height="75" />
+      <RowDefinition Height="75" />
+    <RowDefinition Height="75" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="75" />
+      <ColumnDefinition Width="75" />
+      <ColumnDefinition Width="75" />
+     <ColumnDefinition Width="75" />
+      <ColumnDefinition Width="75" />
+     <ColumnDefinition Width="75" />
+      <ColumnDefinition Width="75" />
+      <ColumnDefinition Width="75" />
+       <ColumnDefinition Width="75" />
+      <ColumnDefinition Width="75" />
+          </Grid.ColumnDefinitions>
+      <Button x:Name="button1" Text="1"   Grid.Row="0" Grid.Column="2" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button2" Text="2"  Grid.Row="1" Grid.Column="3" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button3" Text="3"  Grid.Row="2" Grid.Column="3" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button4" Text="4"  Grid.Row="3" Grid.Column="3" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button5" Text="5"  Grid.Row="4" Grid.Column="2" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button6" Text="6"  Grid.Row="4" Grid.Column="1" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button7" Text="7"  Grid.Row="3" Grid.Column="0" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button8" Text="8"  Grid.Row="2" Grid.Column="0" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button9" Text="9"  Grid.Row="1" Grid.Column="0" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      <Button x:Name="button10" Text="10" Grid.Row="0" Grid.Column="1" WidthRequest="50" HeightRequest="50" FontSize="24" TextColor="Red"/>
+      
+  </Grid>
+
+ <Entry  x:Name="KillNumber" TextColor="Red" HeightRequest="75" WidthRequest="100" BackgroundColor="White"/>
+  <!--<Button Cliced="KillPlayer" TextColor="Red"/>-->
+<Button x:Name="ReturnToDay" TextColor="Red" />
+</StackLayout>
+</ContentPage>
